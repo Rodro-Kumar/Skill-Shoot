@@ -1,5 +1,6 @@
 import Banner from "./Component/Banner";
 import Company from "./Component/Company";
+import Discount from "./Component/Discount";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div>
         <Banner />
         <Company />
+        <Discount />
       </div>
     </>
   );
