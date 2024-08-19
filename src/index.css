@@ -45,3 +45,13 @@
     @apply align-middle;
   }
 }
+
+@layer components {
+  .right-icon {
+    transition: position 0.5s ease !important  ;
+    -webkit-transition: position 0.5s ease !important  ;
+    -moz-transition: position 0.5s ease !important  ;
+    -ms-transition: position 0.5s ease !important  ;
+    -o-transition: position 0.5s ease !important  ;
+  }
+}
