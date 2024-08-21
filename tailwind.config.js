@@ -13,6 +13,7 @@ export default {
         primaryColor: "var(--primaryColor)",
         secondColor: "var(--secondColor)",
         thirdColor: "var(--thirdColor)",
+        paraGraphColor: "var(--paraGraphColor)",
         whites: "var(--whites)",
         blacks: "var(--blacks)",
       },

@@ -1,3 +1,4 @@
+import About from "./Component/About";
 import Banner from "./Component/Banner";
 import Company from "./Component/Company";
 import Course from "./Component/Course";
@@ -13,6 +14,7 @@ function App() {
         <Discount />
         <Exist />
         <Course />
+        <About />
       </div>
     </>
   );
