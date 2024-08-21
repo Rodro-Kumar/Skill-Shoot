@@ -5,6 +5,7 @@ import Course from "./Component/Course";
 import Discount from "./Component/Discount";
 import Exist from "./Component/Exist";
 import Pricing from "./Component/Pricing";
+import Rating from "./Component/Rating";
 import Subscribe from "./Component/Subscribe";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <About />
         <Subscribe />
         <Pricing />
+        <Rating />
       </div>
     </>
   );

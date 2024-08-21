@@ -55,4 +55,29 @@
     -ms-transition: position 0.5s ease !important  ;
     -o-transition: position 0.5s ease !important  ;
   }
+
+  .swiper-wrapper .swiper-slide-next .ratingBody {
+    background: #ffffff !important;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    filter: blur(0) !important;
+    -webkit-filter: blur(0) !important;
+  }
+
+  .swiper-wrapper .swiper-slide .ratingBody {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+  }
+
+  .swiper-wrapper .swiper-slide-next .ratingBody .line {
+    opacity: 1 !important;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+  }
 }
