@@ -28,6 +28,7 @@ const Nav = () => {
             )}
           </ul>
         </div>
+        {/* Login & Register Button */}
         <div className="flex items-center gap-x-5">
           <div>
             <a
@@ -37,7 +38,6 @@ const Nav = () => {
               Login
             </a>
           </div>
-
           <div>
             {" "}
             <button className="text-[18px] font-poppins text-whites font-normal py-2 px-11 rounded-lg bg-secondColor hover:bg-[#f59f75] transition-all">
