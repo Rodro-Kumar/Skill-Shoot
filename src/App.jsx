@@ -4,6 +4,7 @@ import Company from "./Component/Company";
 import Course from "./Component/Course";
 import Discount from "./Component/Discount";
 import Exist from "./Component/Exist";
+import Subscribe from "./Component/Subscribe";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Exist />
         <Course />
         <About />
+        <Subscribe />
       </div>
     </>
   );
