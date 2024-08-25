@@ -1,5 +1,6 @@
 import React from "react";
 import { GiCheckMark } from "react-icons/gi";
+import disignVector from "../assets/pricing_design.png";
 
 const Pricing = () => {
   return (
@@ -82,7 +83,10 @@ const Pricing = () => {
           </div>
           {/* Pro */}
 
-          <div className="max-w-[292px] rounded-[28px] bg-primaryColor shadow-2xl shadow-primaryColor">
+          <div className="max-w-[292px] z-40 relative rounded-[28px] bg-primaryColor shadow-2xl shadow-primaryColor">
+            <div className="absolute top-0 right-[-35px] -z-10">
+              <img src={disignVector} alt={disignVector} />
+            </div>
             {/* Most Popular */}
             <div className="flex items-end justify-end pt-5 pr-5">
               <div className="font-poppins font-semibold text-whites uppercase py-2 px-4 rounded-2xl bg-secondColor tracking-[03px]">
