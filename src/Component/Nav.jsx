@@ -111,14 +111,14 @@ const Nav = () => {
             <div>
               <a
                 href="#"
-                className="font-poppins text-[18px] font-normal text-whites"
+                className="font-poppins text-[18px] md:text-base lg:text-[18px] font-normal text-whites"
               >
                 Login
               </a>
             </div>
             <div>
               {" "}
-              <button className="text-[18px] font-poppins text-whites font-normal py-2 px-11 rounded-lg bg-secondColor hover:bg-[#f59f75] transition-all">
+              <button className="md:text-base lg:text-[18px] font-poppins text-whites font-normal py-2 px-11 rounded-lg bg-secondColor hover:bg-[#f59f75] transition-all">
                 Register
               </button>
             </div>
