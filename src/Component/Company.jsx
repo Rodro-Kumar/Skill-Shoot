@@ -10,20 +10,25 @@ const Company = () => {
 
   return (
     <>
-      <div className="pt-[100px] pb-[50px]">
+      <div className="md:pt-[100px] pt-[50px] pb-[50px] px-4 xl:px-0">
         <div className="container">
           <div className="flex items-center flex-col justify-center text-center">
-            <h3 className="font-poppins font-semibold text-4xl text-black">
+            <h3 className="font-poppins font-semibold w-[230px] sm:w-full text-[18px] md:text-4xl text-black">
               Trusted more than <span className="text-secondColor">100+</span>{" "}
               in the world
             </h3>
-            <p className="font-poppins font-normal text-[#808080] text-base pt-[10px] max-w-[545px]">
+            <p className="font-poppins font-normal text-[#808080] text-xs md:text-base pt-[10px] max-w-[545px]">
               they have asked us more than 3 times to teach their employees
               about various things. to improve their skills
             </p>
-            <div className="flex items-center justify-between w-full pt-[50px]">
+            <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-5 w-full md:justify-between pt-[30px] md:pt-[50px]">
               {allCompany.map((item, index) => (
-                <img src={item} alt={item} key={index} />
+                <img
+                  src={item}
+                  alt={item}
+                  key={index}
+                  className="w-[80px] md:w-[150px]"
+                />
               ))}
             </div>
           </div>
