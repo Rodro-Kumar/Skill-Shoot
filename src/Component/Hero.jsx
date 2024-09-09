@@ -39,7 +39,7 @@ const Hero = () => {
               />
             </div>
 
-            <p className="font-poppins font-normal m-auto text-xs lg:text-[18px] text-whites opacity-[60%] max-w-[527px] lg:leading-[30px]">
+            <p className="font-poppins font-normal m-auto md:m-0 text-xs lg:text-[18px] text-whites opacity-[60%] max-w-[527px] lg:leading-[30px]">
               we have created more than 100+ materials on various things that
               will help your career, with mentors who are experienced in their
               fields.
