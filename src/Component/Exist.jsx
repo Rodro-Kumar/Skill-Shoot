@@ -7,7 +7,7 @@ import img4 from "../assets/Exist/4.png";
 
 const Exist = () => {
   return (
-    <div className="pb-[100px] pt-[40px]">
+    <div id="About" className="pb-[100px] pt-[40px]">
       <div className="container">
         <div className="flex justify-between">
           {/* left */}

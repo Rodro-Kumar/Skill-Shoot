@@ -40,7 +40,7 @@ const Course = () => {
   };
   return (
     <>
-      <div className="bg-primaryColor py-[75px]">
+      <div id="Course" className="bg-primaryColor py-[75px]">
         <div className="container">
           <div className="flex flex-col items-center justify-center text-center relative pb-12">
             <h3 className="font-poppins font-semibold text-4xl text-whites pb-[10px]">

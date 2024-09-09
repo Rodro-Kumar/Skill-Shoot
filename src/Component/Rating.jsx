@@ -19,7 +19,7 @@ import { Navigation } from "swiper/modules";
 
 const Rating = () => {
   return (
-    <div className="bg-[#F8F8F8] py-[85px]">
+    <div id="Testimoni" className="bg-[#F8F8F8] py-[85px]">
       <div className="container">
         <div className="flex flex-col items-center justify-center text-center">
           <h4 className="text-4xl font-semibold font-poppins">

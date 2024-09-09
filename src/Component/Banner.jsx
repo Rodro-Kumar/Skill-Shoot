@@ -4,8 +4,8 @@ import Hero from "./Hero";
 
 const Banner = () => {
   return (
-    <div className="bg-primaryColor">
-      <div className="container">
+    <div id="Home" className="bg-primaryColor">
+      <div>
         <Nav />
         <Hero />
       </div>
