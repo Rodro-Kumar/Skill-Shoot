@@ -19,21 +19,24 @@ import { Navigation } from "swiper/modules";
 
 const Rating = () => {
   return (
-    <div id="Testimoni" className="bg-[#F8F8F8] py-[85px]">
+    <div
+      id="Testimoni"
+      className="bg-[#F8F8F8] py-[50px] lg:py-[85px] px-4 xl:px-0"
+    >
       <div className="container">
         <div className="flex flex-col items-center justify-center text-center">
-          <h4 className="text-4xl font-semibold font-poppins">
+          <h4 className="text-[28px] lg:text-4xl font-semibold font-poppins">
             <span className="text-blacks">What do they</span>{" "}
             <span className="text-secondColor">say?</span>
           </h4>
-          <p className="text-base font-poppins font-normal text-paraGraphColor pt-[10px]">
+          <p className="text-sm lg:text-base font-poppins font-normal text-paraGraphColor pt-[10px]">
             This is an honest review from members who have joined us
           </p>
         </div>
         {/* rating */}
         <div className="flex items-center pt-[50px]">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={30}
             navigation={{
               nextEl: ".next",
@@ -41,115 +44,36 @@ const Rating = () => {
             }}
             modules={[Navigation]}
             className="mySwiper"
+            breakpoints={{
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
           >
             <SwiperSlide>
               {" "}
               <div className="ratingBody relative px-12 pt-12 pb-4 flex text-center flex-col items-center bg-[#ffffff00]">
                 <img src={img1} alt={img1} />
-                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 text-xl">
+                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 lg:text-xl text-md">
                   <IoStar />
                   <IoStar />
                   <IoStar />
                   <IoStar />
                   <IoStarOutline />
                 </div>
-                <h5 className="text-2xl font-poppins font-normal text-blacks capitalize pb-[10px]">
+                <h5 className="text-lg lg:text-2xl font-poppins font-normal text-blacks capitalize pb-1 lg:pb-[10px]">
                   Jason Bay
                 </h5>
-                <p className="font-poppins font-normal text-base text-paraGraphColor leading-[30px] max-w-[318px]">
-                  I am quite satisfied, because the skills I want or dream of
-                  can really be mastered
-                </p>
-                {/* line */}
-                <div className="line w-full bg-primaryColor h-[6px] rounded-3xl absolute bottom-0 left-0 opacity-0"></div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <div className="ratingBody relative px-12 pt-12 pb-4 flex text-center flex-col items-center bg-[#ffffff00]">
-                <img src={img2} alt={img2} />
-                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 text-xl">
-                  <IoStar />
-                  <IoStar />
-                  <IoStar />
-                  <IoStarHalf />
-                  <IoStarOutline />
-                </div>
-                <h5 className="text-2xl font-poppins font-normal text-blacks capitalize pb-[10px]">
-                  Nany Brugman
-                </h5>
-                <p className="font-poppins font-normal text-base text-paraGraphColor leading-[30px] max-w-[318px]">
-                  I am quite satisfied, because the skills I want or dream of
-                  can really be mastered
-                </p>
-                {/* line */}
-                <div className="line w-full bg-primaryColor h-[6px] rounded-3xl absolute bottom-0 left-0 opacity-0"></div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <div className="ratingBody relative px-12 pt-12 pb-4 flex text-center flex-col items-center bg-[#ffffff00]">
-                <img src={img3} alt={img3} />
-                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 text-xl">
-                  <IoStar />
-                  <IoStar />
-                  <IoStar />
-                  <IoStar />
-                  <IoStarOutline />
-                </div>
-                <h5 className="text-2xl font-poppins font-normal text-blacks capitalize pb-[10px]">
-                  Alexa Nowan
-                </h5>
-                <p className="font-poppins font-normal text-base text-paraGraphColor leading-[30px] max-w-[318px]">
-                  I am quite satisfied, because the skills I want or dream of
-                  can really be mastered
-                </p>
-                {/* line */}
-                <div className="line w-full bg-primaryColor h-[6px] rounded-3xl absolute bottom-0 left-0 opacity-0"></div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <div className="ratingBody relative px-12 pt-12 pb-4 flex text-center flex-col items-center bg-[#ffffff00]">
-                <div className="w-[75px] h-[75px] rounded-full overflow-hidden">
-                  <img src={img5} alt={img5} className="w-full" />
-                </div>
-                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 text-xl">
-                  <IoStar />
-                  <IoStar />
-                  <IoStar />
-                  <IoStar />
-                  <IoStar />
-                </div>
-                <h5 className="text-2xl font-poppins font-normal text-blacks capitalize pb-[10px]">
-                  Jim karon
-                </h5>
-                <p className="font-poppins font-normal text-base text-paraGraphColor leading-[30px] max-w-[318px]">
-                  I am quite satisfied, because the skills I want or dream of
-                  can really be mastered
-                </p>
-                {/* line */}
-                <div className="line w-full bg-primaryColor h-[6px] rounded-3xl absolute bottom-0 left-0 opacity-0"></div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <div className="ratingBody relative px-12 pt-12 pb-4 flex text-center flex-col items-center bg-[#ffffff00]">
-                <div className="w-[75px] h-[75px] rounded-full overflow-hidden">
-                  <img src={img4} alt={img4} className="w-full" />
-                </div>
-
-                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 text-xl">
-                  <IoStar />
-                  <IoStar />
-                  <IoStar />
-                  <IoStar />
-                  <IoStarOutline />
-                </div>
-                <h5 className="text-2xl font-poppins font-normal text-blacks capitalize pb-[10px]">
-                  Elena milsy
-                </h5>
-                <p className="font-poppins font-normal text-base text-paraGraphColor leading-[30px] max-w-[318px]">
+                <p className="font-poppins font-normal text-sm lg:text-base text-paraGraphColor leading-6 lg:leading-[30px] max-w-[318px]">
                   I am quite satisfied, because the skills I want or dream of
                   can really be mastered
                 </p>
@@ -161,17 +85,17 @@ const Rating = () => {
               {" "}
               <div className="ratingBody relative px-12 pt-12 pb-4 flex text-center flex-col items-center bg-[#ffffff00]">
                 <img src={img1} alt={img1} />
-                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 text-xl">
+                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 lg:text-xl text-md">
                   <IoStar />
                   <IoStar />
                   <IoStar />
                   <IoStar />
                   <IoStarOutline />
                 </div>
-                <h5 className="text-2xl font-poppins font-normal text-blacks capitalize pb-[10px]">
+                <h5 className="text-lg lg:text-2xl font-poppins font-normal text-blacks capitalize pb-1 lg:pb-[10px]">
                   Jason Bay
                 </h5>
-                <p className="font-poppins font-normal text-base text-paraGraphColor leading-[30px] max-w-[318px]">
+                <p className="font-poppins font-normal text-sm lg:text-base text-paraGraphColor leading-6 lg:leading-[30px] max-w-[318px]">
                   I am quite satisfied, because the skills I want or dream of
                   can really be mastered
                 </p>
@@ -182,18 +106,84 @@ const Rating = () => {
             <SwiperSlide>
               {" "}
               <div className="ratingBody relative px-12 pt-12 pb-4 flex text-center flex-col items-center bg-[#ffffff00]">
-                <img src={img2} alt={img2} />
-                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 text-xl">
+                <img src={img1} alt={img1} />
+                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 lg:text-xl text-md">
                   <IoStar />
                   <IoStar />
                   <IoStar />
-                  <IoStarHalf />
+                  <IoStar />
                   <IoStarOutline />
                 </div>
-                <h5 className="text-2xl font-poppins font-normal text-blacks capitalize pb-[10px]">
-                  Nany Brugman
+                <h5 className="text-lg lg:text-2xl font-poppins font-normal text-blacks capitalize pb-1 lg:pb-[10px]">
+                  Jason Bay
                 </h5>
-                <p className="font-poppins font-normal text-base text-paraGraphColor leading-[30px] max-w-[318px]">
+                <p className="font-poppins font-normal text-sm lg:text-base text-paraGraphColor leading-6 lg:leading-[30px] max-w-[318px]">
+                  I am quite satisfied, because the skills I want or dream of
+                  can really be mastered
+                </p>
+                {/* line */}
+                <div className="line w-full bg-primaryColor h-[6px] rounded-3xl absolute bottom-0 left-0 opacity-0"></div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <div className="ratingBody relative px-12 pt-12 pb-4 flex text-center flex-col items-center bg-[#ffffff00]">
+                <img src={img1} alt={img1} />
+                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 lg:text-xl text-md">
+                  <IoStar />
+                  <IoStar />
+                  <IoStar />
+                  <IoStar />
+                  <IoStarOutline />
+                </div>
+                <h5 className="text-lg lg:text-2xl font-poppins font-normal text-blacks capitalize pb-1 lg:pb-[10px]">
+                  Jason Bay
+                </h5>
+                <p className="font-poppins font-normal text-sm lg:text-base text-paraGraphColor leading-6 lg:leading-[30px] max-w-[318px]">
+                  I am quite satisfied, because the skills I want or dream of
+                  can really be mastered
+                </p>
+                {/* line */}
+                <div className="line w-full bg-primaryColor h-[6px] rounded-3xl absolute bottom-0 left-0 opacity-0"></div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <div className="ratingBody relative px-12 pt-12 pb-4 flex text-center flex-col items-center bg-[#ffffff00]">
+                <img src={img1} alt={img1} />
+                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 lg:text-xl text-md">
+                  <IoStar />
+                  <IoStar />
+                  <IoStar />
+                  <IoStar />
+                  <IoStarOutline />
+                </div>
+                <h5 className="text-lg lg:text-2xl font-poppins font-normal text-blacks capitalize pb-1 lg:pb-[10px]">
+                  Jason Bay
+                </h5>
+                <p className="font-poppins font-normal text-sm lg:text-base text-paraGraphColor leading-6 lg:leading-[30px] max-w-[318px]">
+                  I am quite satisfied, because the skills I want or dream of
+                  can really be mastered
+                </p>
+                {/* line */}
+                <div className="line w-full bg-primaryColor h-[6px] rounded-3xl absolute bottom-0 left-0 opacity-0"></div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <div className="ratingBody relative px-12 pt-12 pb-4 flex text-center flex-col items-center bg-[#ffffff00]">
+                <img src={img1} alt={img1} />
+                <div className="flex items-center text-[#FF9100] gap-x-2 pt-4 pb-6 lg:text-xl text-md">
+                  <IoStar />
+                  <IoStar />
+                  <IoStar />
+                  <IoStar />
+                  <IoStarOutline />
+                </div>
+                <h5 className="text-lg lg:text-2xl font-poppins font-normal text-blacks capitalize pb-1 lg:pb-[10px]">
+                  Jason Bay
+                </h5>
+                <p className="font-poppins font-normal text-sm lg:text-base text-paraGraphColor leading-6 lg:leading-[30px] max-w-[318px]">
                   I am quite satisfied, because the skills I want or dream of
                   can really be mastered
                 </p>
@@ -204,16 +194,16 @@ const Rating = () => {
           </Swiper>
         </div>
         {/* left right button */}
-        <div className="flex items-center justify-center gap-x-5 pt-[70px]">
+        <div className="flex items-center justify-center gap-x-5 pt-9 lg:pt-[70px]">
           {/* left */}
-          <div className="pre w-[67px] h-[67px] cursor-pointer group bg-[#dbdbdb] rounded-full flex items-center justify-center active:scale-90 transition-transform -translate-y-[50%] z-50">
-            <span className="text-3xl text-blacks bg-whites group-hover:bg-secondColor transition-all group-hover:text-whites rounded-full h-[53px] w-[53px] flex items-center justify-center">
+          <div className="pre lg:w-[67px] w-[50px]  h-[50px] lg:h-[67px] cursor-pointer group bg-[#dbdbdb] rounded-full flex items-center justify-center active:scale-90 transition-transform -translate-y-[50%] z-50">
+            <span className="lg:text-3xl text-xl text-blacks bg-whites group-hover:bg-secondColor transition-all group-hover:text-whites rounded-full lg:h-[53px] h-[40px] w-[40px] lg:w-[53px] flex items-center justify-center">
               <GoArrowLeft />
             </span>
           </div>
           {/* right */}
-          <div className="next w-[67px] h-[67px] cursor-pointer group bg-[#dbdbdb] rounded-full flex items-center justify-center active:scale-90 transition-transform -translate-y-[50%] z-50">
-            <span className="text-3xl text-blacks bg-whites group-hover:bg-secondColor transition-all group-hover:text-whites rounded-full h-[53px] w-[53px] flex items-center justify-center">
+          <div className="next lg:w-[67px] h-[50px] w-[50px] lg:h-[67px] cursor-pointer group bg-[#dbdbdb] rounded-full flex items-center justify-center active:scale-90 transition-transform -translate-y-[50%] z-50">
+            <span className="text-xl lg:text-3xl text-blacks bg-whites group-hover:bg-secondColor transition-all group-hover:text-whites rounded-full h-[40px] w-[40px] lg:h-[53px] lg:w-[53px] flex items-center justify-center">
               <GoArrowRight />
             </span>
           </div>
