@@ -27,7 +27,7 @@ const Company = () => {
                   src={item}
                   alt={item}
                   key={index}
-                  className="w-[80px] md:w-[150px]"
+                  className="w-[80px] md:w-[110px] lg:w-[150px]"
                 />
               ))}
             </div>

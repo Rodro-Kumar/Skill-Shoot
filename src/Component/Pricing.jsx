@@ -4,7 +4,7 @@ import disignVector from "../assets/pricing_design.png";
 
 const Pricing = () => {
   return (
-    <div className="pb-[85px] lg:pb-[100px] px-4 xl:px-0">
+    <div className="pb-[60px] lg:pb-[100px] px-4 xl:px-0">
       <div className="container">
         <div className="flex items-center justify-center flex-col text-center">
           <h4 className="text-[18px] lg:text-4xl font-poppins font-semibold pb-[10px]">
@@ -85,7 +85,7 @@ const Pricing = () => {
           </div>
           {/* Pro */}
           <div className="max-w-[292px] z-40 relative rounded-[28px] bg-primaryColor shadow-2xl shadow-primaryColor">
-            <div className="absolute top-0 right-[-35px] -z-10">
+            <div className="absolute top-0 right-0 lg:right-[-35px] -z-10">
               <img src={disignVector} alt={disignVector} />
             </div>
             {/* Most Popular */}

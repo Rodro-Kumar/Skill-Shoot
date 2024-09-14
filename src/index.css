@@ -80,4 +80,26 @@
     -ms-transition: all linear 0.5s;
     -o-transition: all linear 0.5s;
   }
+
+  @media (max-width: 600px) {
+    .swiper-wrapper .swiper-slide-next .ratingBody {
+      filter: blur(0) !important;
+      -webkit-filter: blur(0) !important;
+    }
+
+    .swiper-wrapper .swiper-slide .ratingBody {
+      filter: blur(0);
+      -webkit-filter: blur(0);
+    }
+
+    .swiper-wrapper .swiper-slide .ratingBody .line {
+      background-color: #cb8461 !important;
+      opacity: 1 !important;
+      transition: all linear 0.5s;
+      -webkit-transition: all linear 0.5s;
+      -moz-transition: all linear 0.5s;
+      -ms-transition: all linear 0.5s;
+      -o-transition: all linear 0.5s;
+    }
+  }
 }

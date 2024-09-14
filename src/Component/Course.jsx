@@ -23,22 +23,11 @@ import { Navigation } from "swiper/modules";
 
 const Course = () => {
   const [open, setopen] = useState(true);
-  const [open1, setopen1] = useState(true);
-  const [open2, setopen2] = useState(true);
-  const [open3, setopen3] = useState(true);
 
   const handleVideo = () => {
     setopen(false);
   };
-  const handleVideo1 = () => {
-    setopen1(false);
-  };
-  const handleVideo2 = () => {
-    setopen2(false);
-  };
-  const handleVideo3 = () => {
-    setopen3(false);
-  };
+
   return (
     <>
       <div
