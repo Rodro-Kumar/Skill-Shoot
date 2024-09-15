@@ -4,7 +4,7 @@ import round from "../assets/Discount/round.png";
 
 const Discount = () => {
   return (
-    <div className="lg:py-[100px] pt-0 pb-[50px] px-4 xl:px-0">
+    <div className="lg:py-[100px] pt-0 pb-[50px] px-4 ">
       <div className="container">
         <div className="bg-thirdColor rounded-xl relative overflow-hidden lg:overflow-visible">
           <div className="bg-primaryColor rounded-full w-14 h-14 absolute top-[-10px] left-[-10px] block md:hidden"></div>

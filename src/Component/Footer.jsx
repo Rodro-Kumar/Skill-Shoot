@@ -37,7 +37,7 @@ const Footer = () => {
   console.log(errorInputData);
 
   return (
-    <div className="bg-primaryColor pt-10 lg:pt-[100px] px-4 xl:px-0">
+    <div className="bg-primaryColor pt-10 lg:pt-[100px] px-4">
       <div className="container">
         <div className="flex flex-col items-center justify-center text-center lg:pb-36 pb-8 relative">
           {/* Line art */}

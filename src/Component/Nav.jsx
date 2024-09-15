@@ -24,7 +24,7 @@ const Nav = () => {
   return (
     <>
       <div
-        className={`xl:px-0 px-4 ${
+        className={` px-4 ${
           scroll
             ? "fixed bg-primaryColor z-[999] duration-500 shadow-lg transition-all w-full py-4"
             : "bg-transparent py-6 px-4 shadow-none"

@@ -4,7 +4,7 @@ import disignVector from "../assets/pricing_design.png";
 
 const Pricing = () => {
   return (
-    <div className="pb-[60px] lg:pb-[100px] px-4 xl:px-0">
+    <div className="pb-[60px] lg:pb-[100px] px-4 ">
       <div className="container">
         <div className="flex items-center justify-center flex-col text-center">
           <h4 className="text-[18px] lg:text-4xl font-poppins font-semibold pb-[10px]">

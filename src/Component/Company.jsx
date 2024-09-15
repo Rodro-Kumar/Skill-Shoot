@@ -10,7 +10,7 @@ const Company = () => {
 
   return (
     <>
-      <div className="md:pt-[100px] pt-[50px] pb-[50px] px-4 xl:px-0">
+      <div className="md:pt-[100px] pt-[50px] pb-[50px] px-4 ">
         <div className="container">
           <div className="flex items-center flex-col justify-center text-center">
             <h3 className="font-poppins font-semibold w-[230px] sm:w-full text-[18px] md:text-4xl text-black">

@@ -12,7 +12,7 @@ import img3 from "../assets/ornamen_1.png";
 const Hero = () => {
   return (
     <>
-      <div className="container px-4 xl:px-0">
+      <div className="container px-4">
         <div className="relative flex justify-center md:gap-x-6 lg:gap-x-0 md:text-start text-center items-center md:justify-between pt-[48px] pb-[40px] md:pb-0">
           {/*  */}
 

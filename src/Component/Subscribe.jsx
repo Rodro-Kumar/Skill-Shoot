@@ -3,7 +3,7 @@ import vector from "../assets/Subscribe/vector.png";
 
 const Subscribe = () => {
   return (
-    <div id="Subscribe" className="mb-[50px] lg:mb-[100px] px-4 xl:px-0">
+    <div id="Subscribe" className="mb-[50px] lg:mb-[100px] px-4">
       <div className="container">
         <div className="bg-thirdColor py-14 lg:py-[70px] px-16 rounded-2xl relative">
           {/* round shap */}

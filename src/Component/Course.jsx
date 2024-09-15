@@ -30,10 +30,7 @@ const Course = () => {
 
   return (
     <>
-      <div
-        id="Course"
-        className="bg-primaryColor py-[50px] lg:py-[75px] px-4 xl:px-0"
-      >
+      <div id="Course" className="bg-primaryColor py-[50px] lg:py-[75px] px-4 ">
         <div className="container">
           <div className="flex flex-col items-center justify-center text-center relative pb-6 lg:pb-12">
             <h3 className="font-poppins font-semibold text-[18px] lg:text-4xl text-whites pb-1 lg:pb-[10px]">
@@ -53,7 +50,7 @@ const Course = () => {
           {/* video */}
           <div className="flex items-center justify-between relative">
             {/* Previous Button */}
-            <div className="pre w-[47px] sm:left-[-12px] sm:top-[40%] md:left-[-15px] lg:w-[67px] h-[47px] lg:h-[67px] cursor-pointer group active:scale-90 transition-transform bg-[#e6e5e5] rounded-full flex items-center justify-center absolute lg:left-[-13px] left-[-9px] xl:-left-[43px] lg:top-[45%] top-[50%] xl:top-[50%] -translate-y-[50%] z-50">
+            <div className="pre w-[47px] sm:left-[-12px] sm:top-[40%] md:left-[-15px] lg:w-[67px] h-[47px] lg:h-[67px] cursor-pointer group active:scale-90 transition-transform bg-[#e6e5e5] rounded-full flex items-center justify-center absolute lg:left-[-13px] left-[-9px] xl:-left-[11px] lg:top-[45%] top-[50%] xl:top-[45%] -translate-y-[50%] z-50">
               <span className="text-xl lg:text-3xl text-blacks bg-whites group-hover:bg-primaryColor transition-all group-hover:text-whites rounded-full h-[33px] lg:h-[53px] lg:w-[53px] w-[33px] flex items-center justify-center">
                 <GoArrowLeft />
               </span>
@@ -431,7 +428,7 @@ const Course = () => {
               </SwiperSlide>
             </Swiper>
             {/* Next Button */}
-            <div className="next w-[47px] lg:w-[67px] sm:right-[-12px] md:right-[-15px] sm:top-[40%] h-[47px] lg:h-[67px] cursor-pointer group bg-[#e6e5e5] rounded-full flex items-center justify-center absolute active:scale-90 transition-transform lg:right-[-13px] right-[-9px] xl:-right-[43px] top-[50%] lg:top-[45%] xl:top-[50%] -translate-y-[50%] z-50">
+            <div className="next w-[47px] lg:w-[67px] sm:right-[-12px] md:right-[-15px] sm:top-[40%] h-[47px] lg:h-[67px] cursor-pointer group bg-[#e6e5e5] rounded-full flex items-center justify-center absolute active:scale-90 transition-transform lg:right-[-13px] right-[-9px] xl:-right-[11px] top-[50%] lg:top-[45%] xl:top-[45%] -translate-y-[50%] z-50">
               <span className="text-xl lg:text-3xl text-blacks bg-whites group-hover:bg-primaryColor transition-all group-hover:text-whites rounded-full lg:h-[53px] h-[33px] lg:w-[53px] w-[33px] flex items-center justify-center">
                 <GoArrowRight />
               </span>

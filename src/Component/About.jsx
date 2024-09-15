@@ -7,7 +7,7 @@ import img3 from "../assets/About/1.png";
 import img4 from "../assets/About/1.png";
 const About = () => {
   return (
-    <div id="About" className="py-[50px] lg:py-[100px] px-4 xl:px-0">
+    <div id="About" className="py-[50px] lg:py-[100px] px-4">
       <div className="container">
         <div className="flex items-center lg:gap-x-5 xl:gap-x-0 justify-between">
           {/* left */}
