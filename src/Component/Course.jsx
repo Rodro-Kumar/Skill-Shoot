@@ -23,9 +23,24 @@ import { Navigation } from "swiper/modules";
 
 const Course = () => {
   const [open, setopen] = useState(true);
+  const [open1, setopen1] = useState(true);
+  const [open2, setopen2] = useState(true);
+  const [open3, setopen3] = useState(true);
 
   const handleVideo = () => {
     setopen(false);
+  };
+
+  const handleVideo1 = () => {
+    setopen1(false);
+  };
+
+  const handleVideo2 = () => {
+    setopen2(false);
+  };
+
+  const handleVideo3 = () => {
+    setopen3(false);
   };
 
   return (
@@ -171,7 +186,7 @@ const Course = () => {
                 <div className="h-[412px] md:h-[412px] sm:h-[456px] lg:h-[498px] sm:max-w-[290px] max-w-[268px] m-auto lg:max-w-[394px] bg-whites rounded-xl overflow-hidden">
                   <div
                     className="w-full h-[180px] md:h-[138px] lg:h-[249px] bg-red-400 relative"
-                    onClick={handleVideo}
+                    onClick={handleVideo1}
                   >
                     <video
                       src={footage1}
@@ -179,7 +194,7 @@ const Course = () => {
                       className="h-full w-full object-cover"
                     ></video>
 
-                    <div className={`${open ? "block" : "hidden"}`}>
+                    <div className={`${open1 ? "block" : "hidden"}`}>
                       <img
                         src={video1}
                         alt=""
@@ -188,7 +203,7 @@ const Course = () => {
                     </div>
                     <div
                       className={`absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] ${
-                        open ? "block" : "hidden"
+                        open1 ? "block" : "hidden"
                       }`}
                     >
                       <div className="w-[60px] h-[60px] lg:w-[84px] lg:h-[84px] rounded-full bg-[#ffffff50] flex items-center justify-center">
@@ -258,7 +273,7 @@ const Course = () => {
                 <div className="h-[412px] md:h-[412px] sm:h-[456px] lg:h-[498px] sm:max-w-[290px] max-w-[268px] m-auto lg:max-w-[394px] bg-whites rounded-xl overflow-hidden">
                   <div
                     className="w-full h-[180px] md:h-[138px] lg:h-[249px] bg-red-400 relative"
-                    onClick={handleVideo}
+                    onClick={handleVideo2}
                   >
                     <video
                       src={footage1}
@@ -266,7 +281,7 @@ const Course = () => {
                       className="h-full w-full object-cover"
                     ></video>
 
-                    <div className={`${open ? "block" : "hidden"}`}>
+                    <div className={`${open2 ? "block" : "hidden"}`}>
                       <img
                         src={video1}
                         alt=""
@@ -275,7 +290,7 @@ const Course = () => {
                     </div>
                     <div
                       className={`absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] ${
-                        open ? "block" : "hidden"
+                        open2 ? "block" : "hidden"
                       }`}
                     >
                       <div className="w-[60px] h-[60px] lg:w-[84px] lg:h-[84px] rounded-full bg-[#ffffff50] flex items-center justify-center">
@@ -345,7 +360,7 @@ const Course = () => {
                 <div className="h-[412px] md:h-[412px] sm:h-[456px] lg:h-[498px] sm:max-w-[290px] max-w-[268px] m-auto lg:max-w-[394px] bg-whites rounded-xl overflow-hidden">
                   <div
                     className="w-full h-[180px] md:h-[138px] lg:h-[249px] bg-red-400 relative"
-                    onClick={handleVideo}
+                    onClick={handleVideo3}
                   >
                     <video
                       src={footage1}
@@ -353,7 +368,7 @@ const Course = () => {
                       className="h-full w-full object-cover"
                     ></video>
 
-                    <div className={`${open ? "block" : "hidden"}`}>
+                    <div className={`${open3 ? "block" : "hidden"}`}>
                       <img
                         src={video1}
                         alt=""
@@ -362,7 +377,7 @@ const Course = () => {
                     </div>
                     <div
                       className={`absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] ${
-                        open ? "block" : "hidden"
+                        open3 ? "block" : "hidden"
                       }`}
                     >
                       <div className="w-[60px] h-[60px] lg:w-[84px] lg:h-[84px] rounded-full bg-[#ffffff50] flex items-center justify-center">
